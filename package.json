@@ -12,9 +12,12 @@
 	},
 	"type": "module",
 	"exports": {
-		"types": "./dist/source/index.d.ts",
-		"default": "./dist/source/index.js"
+		".": {
+			"import": "./dist/source/index.js"
+		},
+		"./package.json": "./package.json"
 	},
+	"typings": "dist/source/index.d.ts",
 	"engines": {
 		"node": ">=14.16"
 	},
